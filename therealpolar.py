@@ -1,3 +1,4 @@
+#ANGULAR ACCELERATION
 import numpy as np
 import matplotlib.pyplot as plt
 import math
@@ -18,7 +19,7 @@ r[0] = .5 #set initial radius
 theta[0]=0 #set in theta value
 w[0]=0
 
-for i in xrange(1,N):
+for i in range(1,N):
     v[i] = v[i-1] + (2*t[i]+r[i-1]*w[i-1]**2)*dt
     r[i] = r[i-1] + v[i-1]*dt
     w[i] = w[i-1] + (math.cos(math.pi*t[i])-2*v[i-1]*w[i-1])/r[i-1]*dt
